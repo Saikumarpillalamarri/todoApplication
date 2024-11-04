@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .container{
+           display: flex; 
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+        }
+.todo-user-input {
+  background-color: white;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e7eb;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 15px;
+}   
+.todoItemsContainer{
+    margin: 0px;
+    padding: 0px;
+} 
+.todoItemsContainer{
+    margin-top: 12px;
+}
+.todo-element{
+    margin-bottom: 10px;
+}
+.input-element{
+    width: 20px;
+    height: 20px;
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+.label-container{
+   background-color: aqua;
+   width: 100%;
+   border-radius: 6px;
+   border-top: none;
+   border-right: none;
+   border-bottom: none;
+   border-left: 5px solid red;
+}
+.label-element{
+    width: 82%;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.deleteContainer{
+    text-align: right;
+    width: 18%;
+}
+.delete-icon{
+    padding: 15px;
+}
+.checked{
+    text-decoration: line-through;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <input type="text" class="form-control" size="70" id="inputElement" class="todo-user-input">
+                <br>
+                <button class="btn btn-primary" id="addTodoItem">Add</button>
+                <ul class="todoItemsContainer" id="todoItemsContainer"></ul>
+                <button class="btn btn-primary" id="saveTodoItem">Save</button>
+            </div>
+        </div>
+    </div>
+    
+
+<script src="script.js"></script> 
+</body>
+</html>
